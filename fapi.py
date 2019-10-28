@@ -2,7 +2,7 @@ from flask import Flask, request
 
 
 
-app = Flask('fapi')
+app = Flask('fapi')  # 实例化，定义一个Flask实例
 
 @app.route('/get_request_info', methods=['post','get'])
 def get_request_info():
