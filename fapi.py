@@ -16,4 +16,4 @@ def get_request_info():
     return request_info
 
 if __name__ == '__main__':
-    app.run(port=8080, debug=True, host='0.0.0.0')
+    app.run(port=4500, debug=True, host='0.0.0.0')
