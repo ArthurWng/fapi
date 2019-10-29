@@ -6,8 +6,6 @@ app = Flask('fapi')  # 实例化，定义一个Flask实例
 @app.route('/get_request_info', methods=['post','get'])
 def get_request_info():
     request_info = dict()
-
-
     request_info['headers'] = dict(request.headers)
     request_info['params_form'] = dict(request.form)
     request_info['params_data'] = dict(request.data)
